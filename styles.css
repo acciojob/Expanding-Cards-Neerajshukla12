@@ -1,1 +1,35 @@
-/*  your css code here. If applicable */
+.container {
+  display: flex;
+  width: 90vw;
+  gap: 10px;
+}
+
+.panel {
+display:flex;
+width:10%;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  transition: flex 0.5s ease-in;
+}
+
+.panel .img-text {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  opacity: 0;
+  font-size: 24px;
+}
+
+.panel.active {
+  width:50%;
+}
+
+.panel.active .img-text {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
